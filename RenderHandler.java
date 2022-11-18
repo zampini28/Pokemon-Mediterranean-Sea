@@ -34,7 +34,7 @@ public class RenderHandler {
 		{
 			for(int x = 0; x < image.getWidth(); x++)
 			{
-				pixels[(x + xpos) + (y + ypos) * this.view.getWidth()] = 
+				this.pixels[(x + xpos) + (y + ypos) * this.view.getWidth()] = 
 				imagePixels[x + y * image.getWidth()];
 			}
 		}
